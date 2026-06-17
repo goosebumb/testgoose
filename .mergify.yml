@@ -1,13 +1,11 @@
-queue_rules: []
-merge_queue:
-  dequeued_label: '"><img src=x onerror=alert(5)>'
-  queued_label: '"><img src=x onerror=alert(5)>'
-  max_parallel_checks: 3
-scopes:
-  source:
-    files:
-      aadcz:
-        include:
-          - '"><img src=x onerror=alert(5)>'
-        exclude:
-          - '"><img src=x onerror=alert(5)>'
+merge_protections:
+  - name: '"><img src=x onerror=alert(5)>'
+    description: '"><img src=x onerror=alert(5)>'
+    if:
+      - base = main
+    success_conditions:
+      - or:
+          - check-success = "><img src=x onerror=alert(5)>
+      - "title ~=
+        ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:(.+))\
+        ?:"
