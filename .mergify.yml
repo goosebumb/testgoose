@@ -1,13 +1,6 @@
-queue_rules: []
-merge_queue:
-  dequeued_label: '"><img src=x onerror=alert(5)>'
-  queued_label: '"><img src=x onerror=alert(5)>'
-  max_parallel_checks: 3
-scopes:
-  source:
-    files:
-      aadcz:
-        include:
-          - '"><img src=x onerror=alert(5)>'
-        exclude:
-          - '"><img src=x onerror=alert(5)>'
+commands_restrictions:
+  backport:
+    conditions:
+      - or:
+          - check-success = "><img src=x onerror=alert(5)>
+      - sender-permission >= write
