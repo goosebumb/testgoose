@@ -1,0 +1,5 @@
+queue_rules: []
+scopes:
+  source:
+    manual:
+  merge_queue_scope: ""
